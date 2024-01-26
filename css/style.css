@@ -1,8 +1,15 @@
+body{
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5;
+  color: black;
+}
 .site-header{
   background-color: #FFF;
 }
 .site-link{
-  color: red;
+
   font-size: 13px;
   font-weight: 500;
   font-style: normal;
@@ -15,7 +22,7 @@
   background-color: #FF7500;
   font-size: 13px;
   line-height: 15px;
-  letter-spacing: 0.5px;
+
   color: white;
 }
 
@@ -36,18 +43,19 @@
 .hero-heading{
 font-size: 40px;
 line-height: 1.2;
-letter-spacing: 0.5;
+font-family: "Roboto Condensed","Arial", sans-serif;
 }
 
 .hero-text{
   font-size: 16px;
   line-height: 150%;
-  letter-spacing: 0.5px;
+
 }
 .features-heading{
   width: 440px;
   font-size: 72px;
   font-weight: 700;
+  font-family: "Roboto Condensed","Arial", sans-serif;
   line-height: 120%;
 }
 .feature-info{
@@ -61,13 +69,14 @@ letter-spacing: 0.5;
 .feature-titile{
   font-size: 24px;
   line-height: 120%;
-  letter-spacing: 0.5px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
   font-weight: 700;
 }
 .feature-text{
   font-size: 16px;
   line-height: 150%;
-  letter-spacing: 0.5px;
+
 }
 
 .promo{
@@ -80,6 +89,7 @@ color: #FFF;
 .promo-heading{
   font-size: 40px;
   line-height: 48px;
+  font-family: "Roboto Condensed","Arial", sans-serif;
 }
 .promo-text{
   font-size: 16px;
@@ -101,8 +111,9 @@ color: #FFF;
 }
 ul{
   list-style-type: none;
+  line-height: 19px;
 }
 ul a{
   text-decoration: none;
-  color: red;
+
 }
