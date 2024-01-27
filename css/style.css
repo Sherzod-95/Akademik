@@ -5,6 +5,10 @@ body{
   letter-spacing: 0.5;
   color: black;
 }
+*:focus{
+  outline: 2px dotted #ff7500;
+  outline-offset: 3px;
+}
 .site-header{
   word-spacing: 10px;
   display: flex;
