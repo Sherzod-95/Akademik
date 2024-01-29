@@ -13,19 +13,22 @@ body{
   word-spacing: 10px;
   display: flex;
   background-color: #FFF;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 5px solid #FF7500;
   justify-content: space-between;
   align-items: center;
 }
 .site-header-right{
   display: flex;
   align-items: center;
-
 }
 .site-ula{
   display: flex;
+  padding: 0;
 }
 .site-link{
-    font-size: 13px;
+  font-size: 13px;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
@@ -34,9 +37,16 @@ body{
   text-decoration: none;
 }
 .site-main{
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
   background-color: #FF7500;
-  font-size: 13px;
   line-height: 15px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  transition: opacity 0.4s ease;
 
   color: white;
 }
@@ -45,8 +55,10 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #252420;
-  color: white;
+  color: #FFF;
 }
 
 .hero-content{
@@ -55,6 +67,7 @@ body{
 .orange-line{
   width: 80px;
   height: 3px;
+  border: none;
   background-color: #ff7500;
 }
 
@@ -69,7 +82,16 @@ font-family: "Roboto Condensed","Arial", sans-serif;
   line-height: 150%;
 
 }
+.hero-img{
+  width: 510px;
+  height: 510px;
+  border-radius: 8px;
+}
 
+.features{
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
 .features-heading{
   width: 440px;
   font-size: 72px;
@@ -81,13 +103,17 @@ font-family: "Roboto Condensed","Arial", sans-serif;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  padding: 0;
 }
 .feature-info{
   width: 340px;
 }
 .feature-icon{
+  display: flex;
+  justify-content: center;
   width: 100px;
   height: 100px;
+  border-radius: 50%;
   background-color: rgba(255, 117, 0, 0.2);
 }
 .feature-titile{
@@ -106,6 +132,7 @@ font-family: "Roboto Condensed","Arial", sans-serif;
 .promo{
 display: flex;
 justify-content: space-around;
+border-radius: 12px ;
 background-color: #252420;
 color: #FFF;
 }
@@ -125,6 +152,9 @@ color: #FFF;
 
 .promo-img{
   width: 440px;
+  padding-right: 64px;
+  padding-bottom: 64px;
+  border-radius: 12px;
   height: 440px;
   object-fit: cover;
 }
@@ -135,17 +165,23 @@ color: #FFF;
   align-items: center;
 }
 .site-footer{
+  padding-top: 56px;
+  padding-bottom: 56px;
   background-color: #f8f8f8;
+
 }
 .footer-hr{
   height: 2px;
+  border: 0;
  background-color: rgba(37, 36, 32, 0.5);
 }
 ul{
+  padding: 0;
   list-style-type: none;
   line-height: 19px;
 }
 ul a{
+  padding: 0;
   text-decoration: none;
 
 }
