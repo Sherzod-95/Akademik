@@ -1,4 +1,9 @@
+*{
+  box-sizing: border-box;
+}
 body{
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -11,21 +16,26 @@ body{
 }
 .site-header{
   word-spacing: 10px;
-  display: flex;
   background-color: #FFF;
   padding-top: 16px;
   padding-bottom: 16px;
   border-top: 5px solid #FF7500;
-  justify-content: space-between;
-  align-items: center;
 }
 .site-header-right{
   display: flex;
   align-items: center;
 }
 .site-ula{
+  margin: 0;
   display: flex;
   padding: 0;
+  margin-right: 32px;
+}
+.sitenav-items{
+  margin-right: 32px;
+}
+.sitenav-items:last-child {
+  margin-right: 0;
 }
 .site-link{
   font-size: 13px;
@@ -47,18 +57,33 @@ body{
   font-weight: bold;
   font-size: 13px;
   transition: opacity 0.4s ease;
-
   color: white;
 }
-
-.hero{
+/* Conteiner */
+.site-header-conteiner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.conteiner{
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero{
+
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #252420;
   color: #FFF;
+}
+.hero-conteiner  {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
 }
 
 .hero-content{
@@ -67,12 +92,16 @@ body{
 .orange-line{
   width: 80px;
   height: 3px;
+  margin: 0;
+  margin-bottom: 40px;
   border: none;
   background-color: #ff7500;
 }
 
 .hero-heading{
 font-size: 40px;
+margin-top: 0;
+margin-bottom: 24px;
 line-height: 1.2;
 font-family: "Roboto Condensed","Arial", sans-serif;
 }
@@ -80,33 +109,50 @@ font-family: "Roboto Condensed","Arial", sans-serif;
 .hero-text{
   font-size: 16px;
   line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 32px;
 
 }
 .hero-img{
   width: 510px;
   height: 510px;
   border-radius: 8px;
+  box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
 
 .features{
   padding-top: 210px;
   padding-bottom: 210px;
+  justify-content: center;
+  align-items: center;
 }
 .features-heading{
+
   width: 440px;
+  margin-top: 0;
+  margin-bottom: 72px;
   font-size: 72px;
   font-weight: 700;
   font-family: "Roboto Condensed","Arial", sans-serif;
   line-height: 120%;
 }
+
 .feature-ul{
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
+  margin: 0;
+  margin-right: ;
   padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 .feature-info{
   width: 340px;
+  margin: 0;
+  margin-right: 40px;
+}
+.feature-info:last-child{
+  margin-right: 0;
 }
 .feature-icon{
   display: flex;
@@ -120,27 +166,33 @@ font-family: "Roboto Condensed","Arial", sans-serif;
   font-size: 24px;
   line-height: 120%;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-
   font-weight: 700;
 }
 .feature-text{
   font-size: 16px;
   line-height: 150%;
-
 }
 
 .promo{
-display: flex;
-justify-content: space-around;
-border-radius: 12px ;
-background-color: #252420;
-color: #FFF;
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+.promo-inner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px ;
+  background-color: #252420;
+  padding: 64px;
+  color: #FFF;
 }
 .promo-content{
   justify-content: space-between;
   width: 440px;
 }
 .promo-heading{
+  margin: 0;
+  margin-bottom: 24px;
   font-size: 40px;
   line-height: 48px;
   font-family: "Roboto Condensed","Arial", sans-serif;
@@ -148,8 +200,16 @@ color: #FFF;
 .promo-text{
   font-size: 16px;
   line-height: 1,5;
+  margin: 0;
+  margin-bottom: 12 px;
 }
 
+.promo-text:last-child{
+  margin-bottom: 0px;
+}
+.promo-text-iterm{
+  margin-bottom:32px  ;
+}
 .promo-img{
   width: 440px;
   padding-right: 64px;
@@ -171,15 +231,21 @@ color: #FFF;
 
 }
 .footer-hr{
+  margin-top: 40px;
+  margin-bottom: 64px;
   height: 2px;
   border: 0;
  background-color: rgba(37, 36, 32, 0.5);
 }
 ul{
-padding: 0;
+  padding: 0;
   list-style-type: none;
   line-height: 19px;
 }
+.onee img{
+  display: block;
+}
+
 ul a{
   padding: 0;
   text-decoration: none;
@@ -188,4 +254,17 @@ ul a{
 .footer-flex{
   display: flex;
   justify-content: space-between;
+  margin: 0;
+}
+.footer_one{
+  margin: 0;
+}
+.marginn img{
+margin-right: 16px;
+}
+.marginn img:last-child{
+  margin-right: 0;
+}
+.marginn {
+  display: block;
 }
